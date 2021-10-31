@@ -57,7 +57,7 @@
                                             <!--Эфективное решение-->
     <section class="main">
         <h1 class="main-title">Эффективные решения <br/>для вашего бизнеса</h1>
-        <button type="button" class="main-btn">Заказать услугу</button>
+        <button type="button" class="main-btn" data-modal-open>Заказать услугу</button>
         
     </section>
                                             <!--Особенности-->
@@ -402,5 +402,15 @@
             </div>
         </div>           
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+    <button class="modal-btn" type="button" data-modal-close> 
+    <svg class="close-icon">
+        <use href="/images/sprite.svg#close-icon"></use>
+        </svg>
+    </button>  
+    </div>
+    </div>
+    <script src="/js/modal.js"></script>
 </body>
 </html>
